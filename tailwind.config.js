@@ -5,6 +5,9 @@ export default {
     extend: {
       colors: {
         gray: "#DFDFDF",
+        orange: "#FFC593",
+        pink: "#BC7198",
+        blue: "#5A77FF",
       },
       fontFamily: {
         dm: "DM Sans, sans-serif",

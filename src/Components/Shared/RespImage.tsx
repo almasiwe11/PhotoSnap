@@ -1,7 +1,7 @@
 type PropTypes = {
   mobile: string
   desktop: string
-  style: string
+  style?: string
   tablet?: string
   alt: string
 }

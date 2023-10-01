@@ -3,10 +3,10 @@ import MainHero from "./MainHero"
 
 function Hero() {
   return (
-    <div className="md:h-screen ">
+    <section className="md:h-screen ">
       <Header />
       <MainHero />
-    </div>
+    </section>
   )
 }
 
