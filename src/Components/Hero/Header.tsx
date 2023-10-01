@@ -4,7 +4,7 @@ import Button from "../Shared/Button"
 
 export default function Header() {
   return (
-    <header className="flex justify-between wrapper h-16 items-center">
+    <header className="flex justify-between wrapper h-20 items-center">
       <Logo />
       <NavMenu
         ulStyle=" gap-8 font-bold hidden md:flex"

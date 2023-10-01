@@ -6,7 +6,7 @@ import HeroText from "./HeroText"
 
 export default function MainHero() {
   return (
-    <main className="flex-flex">
+    <main className="flex-flex lg:h-[calc(100vh-5rem)]">
       <HeroText />
       <RespImage
         desktop={HeroDes}
