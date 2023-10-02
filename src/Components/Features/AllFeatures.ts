@@ -1,9 +1,9 @@
-import Domain from "./FeatureIcons/Domain"
-import Drag from "./FeatureIcons/Drag"
-import Embed from "./FeatureIcons/Embed"
-import Exposure from "./FeatureIcons/Exposure"
-import NoLimit from "./FeatureIcons/NoLimit"
-import Responsive from "./FeatureIcons/Responsive"
+import Domain from "../Icons/Domain"
+import Drag from "../Icons/Drag"
+import Embed from "../Icons/Embed"
+import Exposure from "../Icons/Exposure"
+import NoLimit from "../Icons/NoLimit"
+import Responsive from "../Icons/Responsive"
 
 const allFeatures = [
   {
