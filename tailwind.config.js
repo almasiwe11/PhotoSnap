@@ -14,6 +14,7 @@ export default {
       },
       gridTemplateColumns: {
         stories: "repeat(auto-fit, minmax(20rem, 1fr))",
+        features: "repeat(auto-fit, minmax(22rem, 1fr))",
       },
     },
     screens: {

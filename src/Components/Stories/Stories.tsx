@@ -1,11 +1,27 @@
+import RespImage from "../Shared/RespImage"
+import StoryTitles from "./StoryTitles"
 import { stories } from "../Shared/StoriesData"
-import Story from "./Story"
 
-export default function Stories() {
-  const homeStories = stories.slice(0, 4)
+type PropTypes = {
+  num?: number
+}
+
+export default function Stories({ num = stories.length }: PropTypes) {
+  const displayStories = stories.slice(0, num)
   return (
-    <section className="">
-      <Story stories={homeStories} />
-    </section>
+    <div className=" grid grid-cols-stories">
+      {displayStories.map((story) => (
+        <div key={story.id} className="relative">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <RespImage
+            desktop={story.desktop}
+            tablet={story.tablet}
+            mobile={story.mobile}
+            alt={story.alt}
+          />
+          <StoryTitles story={story} />
+        </div>
+      ))}
+    </div>
   )
 }
