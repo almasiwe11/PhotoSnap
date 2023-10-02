@@ -11,7 +11,10 @@ export default function Stories({ num = stories.length }: PropTypes) {
   return (
     <div className=" grid grid-cols-stories">
       {displayStories.map((story) => (
-        <div key={story.id} className="relative">
+        <div
+          key={story.id}
+          className="relative group duration-300 ease-in-out hover:-translate-y-5"
+        >
           <div className="absolute inset-0 bg-black/20"></div>
           <RespImage
             desktop={story.desktop}
@@ -20,6 +23,7 @@ export default function Stories({ num = stories.length }: PropTypes) {
             alt={story.alt}
           />
           <StoryTitles story={story} />
+          <div className="absolute h-3 w-full bottom-0 gradient opacity-0 group-hover:opacity-100"></div>
         </div>
       ))}
     </div>

@@ -46,4 +46,8 @@
   .px-sm {
     @apply px-10;
   }
+
+  .gradient {
+    @apply bg-gradient-to-bl from-blue via-pink  to-orange;
+  }
 }

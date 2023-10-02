@@ -1,5 +1,5 @@
 type PropTypes = {
-  list: string[]
+  list?: string[]
   liStyle?: string
   ulStyle?: string
 }
