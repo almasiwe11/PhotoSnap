@@ -1,6 +1,11 @@
-export default function Twitter() {
+export default function Twitter({ style }: { style: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
+    <svg
+      className={`cursor-pointer ${style}`}
+      xmlns="http://www.w3.org/2000/svg"
+      width="21"
+      height="18"
+    >
       <defs>
         <linearGradient id="a" x1="100%" x2="0%" y1="16.979%" y2="83.021%">
           <stop offset="0%" stopColor="#65FFEB" />

@@ -1,6 +1,11 @@
-export default function Instagram() {
+export default function Instagram({ style }: { style: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+    <svg
+      className={`cursor-pointer ${style}`}
+      xmlns="http://www.w3.org/2000/svg"
+      width="21"
+      height="20"
+    >
       <defs>
         <linearGradient id="a" x1="0%" x2="50%" y1="100%" y2="0%">
           <stop offset="0%" stopColor="#FFC593" />

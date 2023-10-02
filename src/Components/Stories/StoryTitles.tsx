@@ -10,7 +10,9 @@ export default function StoryTitles({ story }: { story: StoryType }) {
       </div>
       <hr></hr>
       <div className="flex justify-between items-center">
-        <span className="uppercase tracking-wider font-bold">read story</span>
+        <span className="uppercase tracking-wider font-bold cursor-pointer">
+          read story
+        </span>
         <Arrow color="white" />
       </div>
     </div>
