@@ -1,8 +1,4 @@
-import Facebook from "../Icons/Facebook"
-import Instagram from "../Icons/Instagram"
-import Pinterest from "../Icons/Pinterest"
-import Twitter from "../Icons/Twitter"
-import Youtube from "../Icons/Youtube"
+import SmIcons from "../Icons/SmIcons"
 import Cta from "../Shared/Cta"
 import Logo from "../Shared/Logo"
 import NavMenu from "../Shared/NavMenu"
@@ -15,12 +11,12 @@ export default function Footer() {
         <div className="flex col-span-2 md:col-span-1  gap-2">
           <Logo white={true} />
         </div>
-        <div className=" col-span-2 md:col-start-1 md:col-span-1 md:row-start-3 flex gap-3 mb-8 mt-3 md:mb-0 md:mt-0">
-          <Facebook style="scale-110 lg:scale-[125%]" />
-          <Youtube style="scale-110 lg:scale-[125%]" />
-          <Twitter style="scale-110 lg:scale-[125%]" />
-          <Pinterest style="scale-110 lg:scale-[125%]" />
-          <Instagram style="scale-110 lg:scale-[125%]" />
+        <div className=" col-span-2 md:gap-5  md:col-start-1 md:col-span-1 md:row-start-3 flex gap-3 mb-8 mt-3 md:mb-0 md:mt-0">
+          <SmIcons brand="facebook" />
+          <SmIcons brand="youtube" />
+          <SmIcons brand="twitter" />
+          <SmIcons brand="pinterest" />
+          <SmIcons brand="instagram" />
         </div>
 
         <div className="lg:justify-self-start col-span-2 md:col-start-1 md:col-span-1 lg:row-span-3 lg:col-start-2 lg:row-start-1">
