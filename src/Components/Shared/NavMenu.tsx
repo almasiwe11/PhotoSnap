@@ -10,7 +10,7 @@ function NavMenu({ list = navList, liStyle, ulStyle }: PropTypes): JSX.Element {
   return (
     <ul className={`${ulStyle} uppercase `}>
       {list.map((linkName) => (
-        <li key={linkName} className={`${liStyle}`}>
+        <li key={linkName} className={`${liStyle} cursor-pointer`}>
           {linkName}
         </li>
       ))}

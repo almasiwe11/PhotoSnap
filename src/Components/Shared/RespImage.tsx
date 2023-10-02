@@ -4,6 +4,7 @@ type PropTypes = {
   style?: string
   tablet?: string
   alt: string
+  picStyle?: string
 }
 
 function RespImage({
@@ -12,9 +13,10 @@ function RespImage({
   style,
   alt,
   tablet,
+  picStyle,
 }: PropTypes): JSX.Element {
   return (
-    <picture>
+    <picture className={picStyle}>
       <source srcSet={desktop} media={"(min-width:1024px)"} />
       <source srcSet={tablet} media={"(min-width:768px)"} />
       <source srcSet={mobile} />

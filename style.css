@@ -22,4 +22,28 @@
   .wrapper {
     @apply max-w-[75rem] mx-auto w-[90%];
   }
+
+  .max-len {
+    max-width: 26rem;
+  }
+
+  .ml-sm {
+    margin-left: 5%;
+  }
+
+  .ml-lg {
+    margin-left: 7%;
+  }
+
+  .ml {
+    @apply ml-sm lg:ml-lg;
+  }
+
+  .px {
+    @apply px-24;
+  }
+
+  .px-sm {
+    @apply px-10;
+  }
 }

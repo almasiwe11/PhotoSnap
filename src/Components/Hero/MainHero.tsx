@@ -6,12 +6,13 @@ import HeroText from "./HeroText"
 
 export default function MainHero() {
   return (
-    <main className="flex-flex lg:h-[calc(100vh-5rem)]">
+    <main className="flex-flex lg:h-[calc(100vh-5rem)] md:justify-between">
       <HeroText />
       <RespImage
         desktop={HeroDes}
         tablet={HeroTab}
         mobile={HeroMob}
+        picStyle="grow min-w-[18rem]"
         alt="Hero Image"
       />
     </main>

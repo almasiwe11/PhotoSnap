@@ -10,7 +10,9 @@ export default function Cta({
   color = "black",
 }: PropTypes) {
   return (
-    <div className="flex gap-4 text-white items-center cursor-pointer group">
+    <div
+      className={`flex gap-4 } text-${color} items-center mt-3 cursor-pointer group`}
+    >
       <span className="uppercase font-bold">{text}</span>
       <Arrow color={color} />
     </div>
