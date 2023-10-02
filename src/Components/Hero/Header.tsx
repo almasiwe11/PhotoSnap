@@ -8,7 +8,7 @@ export default function Header() {
       <Logo />
       <NavMenu
         ulStyle=" gap-8 font-bold hidden md:flex"
-        liStyle="tracking-widest"
+        liStyle="tracking-widest "
       />
       <Button text="get an invite" />
     </header>
