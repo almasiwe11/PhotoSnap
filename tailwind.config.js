@@ -12,13 +12,16 @@ export default {
       fontFamily: {
         dm: "DM Sans, sans-serif",
       },
+      gridTemplateColumns: {
+        stories: "repeat(auto-fit, minmax(20rem, 1fr))",
+      },
     },
     screens: {
       sm: "480px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1440px",
+      "2xl": "1600px",
     },
   },
   plugins: [],

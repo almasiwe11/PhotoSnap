@@ -31,7 +31,7 @@ export default function InfoBlock({
         picStyle="grow min-w-[18rem] "
       />
       <div
-        className={`flex-center lg:max-w-[42rem] grow w-full ${
+        className={`flex-center lg:max-w-[42rem] 2xl:max-w-[50rem] grow w-full ${
           right && "md:order-first "
         }`}
       >
