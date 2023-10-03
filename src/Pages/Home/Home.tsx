@@ -1,7 +1,7 @@
 import Info from "./Info"
 import Stories from "../../Components/Stories/Stories"
 import Features from "../../Components/Features/Features"
-import TopOfPage from "../../Components/TopOfPage/TopOfPage"
+import PhotoText from "../../Components/PhotoText/PhotoText"
 import HeroDes from "/home/desktop/create-and-share.jpg"
 import HeroTab from "/home/tablet/create-and-share.jpg"
 import HeroMob from "/home/mobile/create-and-share.jpg"
@@ -9,7 +9,7 @@ import HeroMob from "/home/mobile/create-and-share.jpg"
 export default function Home() {
   return (
     <>
-      <TopOfPage
+      <PhotoText
         tablet={HeroTab}
         desktop={HeroDes}
         mobile={HeroMob}

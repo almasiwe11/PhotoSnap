@@ -12,9 +12,10 @@ type Props = {
   alt: string
   title: string
   subtitle: string
+  flip?: boolean
 }
 
-export default function TopOfPage({
+export default function PhotoText({
   vh,
   gradient = true,
   cta,
@@ -25,6 +26,7 @@ export default function TopOfPage({
   subtitle,
   tablet,
   alt,
+  flip = false,
 }: Props) {
   return (
     <div
@@ -43,7 +45,9 @@ export default function TopOfPage({
         desktop={desktop}
         tablet={tablet}
         mobile={mobile}
-        picStyle="grow min-w-[18rem]"
+        picStyle={`${
+          flip ? "order-first" : "md:order-last"
+        } order-first  grow min-w-[18rem]`}
         alt={alt}
       />
     </div>
