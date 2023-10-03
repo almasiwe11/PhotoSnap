@@ -1,41 +1,9 @@
 import { heading } from "../../Components/Tailwind/Heading"
-
+import { features } from "./FeatureData"
 export default function Table() {
-  const features = [
-    {
-      name: "unlimited story posting",
-      basic: true,
-      pro: true,
-      business: true,
-    },
-    {
-      name: "unlimited photo upload",
-      basic: true,
-      pro: true,
-      business: true,
-    },
-    {
-      name: "embedding custom content",
-      basic: true,
-      pro: true,
-      business: true,
-    },
-    {
-      name: "customize metadata",
-      basic: true,
-      pro: true,
-      business: true,
-    },
-    {
-      name: "advanced metadata",
-      basic: true,
-      pro: true,
-      business: true,
-    },
-  ]
   return (
     <div className="wrapper mt-20">
-      <h1 className={`${heading.black} text-center`}>Compare</h1>
+      <h1 className={`${heading.black} text-center mb-10`}>Compare</h1>
       <table className="w-full text-left font-bold">
         <thead className="h-16">
           <tr className="border-b-2  border-black">
@@ -46,30 +14,14 @@ export default function Table() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td className="text-left uppercase">unlimited story posting</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td className="text-left uppercase">unlimited photo upload</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td className="text-left uppercase">customize metadata</td>
-            <td></td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td className="text-left uppercase">embedding custom content</td>
-            <td></td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
+          {features.map((feature) => (
+            <tr key={feature.name}>
+              <td className="text-left uppercase">{feature.name}</td>
+              <td>{feature.basic && "✓"}</td>
+              <td>{feature.pro && "✓"}</td>
+              <td>{feature.business && "✓"}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
