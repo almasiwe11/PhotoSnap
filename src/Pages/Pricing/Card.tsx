@@ -17,20 +17,34 @@ export default function Card({
 }: Props) {
   return (
     <div
-      className={`py-12 px-5  ${color === "gray" ? "bg-gray" : "bg-black"} `}
+      className={`py-12 md:py-6 lg:py-12 relative px-5 h-full   ${
+        color === "gray" ? "bg-gray" : "bg-black lg:py-20"
+      } `}
     >
       <div
-        className={`flex flex-col items-center gap-5 ${
+        className={`flex flex-col md:grid md:grid-cols-2 lg:flex lg:items-center items-center md:items-start gap-5 ${
           color === "gray" ? "text-black" : "text-white"
         }`}
       >
+        {color === "black" && (
+          <div className="top-0 h-2 w-full lg:top-0 lg:h-2 lg:w-full lg:block absolute gradient md:w-2 md:left-0 md:h-full "></div>
+        )}
+
         <h1 className={`capitalize font-bold text-2xl `}>{name}</h1>
-        <p className="text-center">{subtitle}</p>
-        <div className="flex flex-col gap-2 items-center">
+        <p className="text-center col-start-1 md:text-left row-start-2 lg:text-center">
+          {subtitle}
+        </p>
+        <div className="flex flex-col gap-2 items-center col-start-2 row-span-3 row-start-1">
           <span className="text-4xl font-bold ">${price}</span>
           <span className="">per {type === "yearly" ? "year" : "month"}</span>
         </div>
-        <Button text="pick plan" style={color === "gray" ? "black" : "white"} />
+        <div className="col-start-1 w-full">
+          <Button
+            text="pick plan"
+            style={color === "gray" ? "black" : "white"}
+            className="w-full "
+          />
+        </div>
       </div>
     </div>
   )

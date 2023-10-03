@@ -10,7 +10,7 @@ export default function Header() {
         ulStyle=" gap-8 font-bold hidden md:flex"
         liStyle="tracking-widest "
       />
-      <Button text="get an invite" />
+      <Button text="get an invite" className="hidden md:block" />
     </header>
   )
 }

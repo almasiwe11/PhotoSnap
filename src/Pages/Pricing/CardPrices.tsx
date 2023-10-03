@@ -12,7 +12,7 @@ export default function CardPrices() {
         <span className={isMonthly ? "font-bold" : ""}>Yearly</span>
       </div>
 
-      <div className="flex flex-column justify-between gap-6">
+      <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-12 lg:gap-6 lg:items-center">
         <CardFlip
           isMonthly={isMonthly}
           name="Basic"

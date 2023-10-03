@@ -21,11 +21,15 @@ export default function CardFlip({
   let flip = ""
   if (isMonthly && !backflip) flip = "flip"
   if (isMonthly && backflip) flip = "backflip"
-  console.log(flip)
+  console.log(color)
   return (
-    <div className={`card-container ${flip}`}>
-      <div className={`card `}>
-        <div className="front">
+    <div
+      className={`card-container ${
+        color === "black" ? "lg:h-[28rem]" : "lg:h-96"
+      } h-96 md:h-56 w-full  ${flip}`}
+    >
+      <div className={`card  `}>
+        <div className="front ">
           <Card
             name={name}
             subtitle={subtitle}
