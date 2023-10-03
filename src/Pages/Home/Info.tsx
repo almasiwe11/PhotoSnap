@@ -22,6 +22,7 @@ export default function Info() {
         your story with everyone."
         alt="beautiful storied image"
         flip={true}
+        cta="view the stories"
       />
       <PhotoText
         title="designed for everyone"
@@ -35,6 +36,7 @@ export default function Info() {
         Our tool is designed for photographers of all levels, brands, businesses
         you name it."
         alt="design image"
+        cta="view the stories"
       />
     </section>
   )
