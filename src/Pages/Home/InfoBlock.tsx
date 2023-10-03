@@ -1,6 +1,6 @@
-import Cta from "../Shared/Cta"
-import { heading } from "../Tailwind/Heading"
-import RespImage from "../Shared/RespImage"
+import Cta from "../../Components/Shared/Cta"
+import { heading } from "../../Components/Tailwind/Heading"
+import RespImage from "../../Components/Shared/RespImage"
 
 type PropTypes = {
   children: React.ReactNode

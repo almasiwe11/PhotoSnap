@@ -16,6 +16,11 @@ export default {
         stories: "repeat(auto-fit, minmax(20rem, 1fr))",
         footer: "max-content, 1fr, max-content",
       },
+      backgroundImage: {
+        "stories-des": "url(/stories/desktop/moon-of-appalacia.jpg)",
+        "stories-tab": "url(/stories/tablet/moon-of-appalacia.jpg)",
+        "stories-mob": "url(/stories/mobile/moon-of-appalacia.jpg)",
+      },
     },
     screens: {
       sm: "480px",

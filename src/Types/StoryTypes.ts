@@ -7,6 +7,8 @@ type StoryType = {
   name: string
   author: string
   alt: string
+  featured: boolean
+  intro: string
 }
 
 export type { StoryType }

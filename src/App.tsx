@@ -1,18 +1,18 @@
-import Hero from "./Components/Hero/Hero"
-import Info from "./Components/Info/Info"
-import Stories from "./Components/Stories/Stories"
-import Features from "./Components/Features/Features"
-import Footer from "./Components/Footer/Footer"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import AppLayout from "./ui/AppLayout"
+import Home from "./Pages/Home/Home"
+import StoriesPage from "./Pages/Stories/StoriesPage"
 function App() {
   return (
     <div className="font-dm">
-      <Hero />
-      <Info />
-      <Stories num={4} />
-      <div className="mb-24">
-        <Features num={3} />
-      </div>
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AppLayout />}>
+            <Route index element={<Home />} />
+            <Route path="stories" element={<StoriesPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

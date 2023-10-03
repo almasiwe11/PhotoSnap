@@ -1,6 +1,6 @@
 import RespImage from "../Shared/RespImage"
 import StoryTitles from "./StoryTitles"
-import { stories } from "../Shared/StoriesData"
+import { stories } from "../../Data/StoriesData"
 
 type PropTypes = {
   num?: number

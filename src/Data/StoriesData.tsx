@@ -1,4 +1,6 @@
-const stories = [
+import { StoryType } from "../Types/StoryTypes"
+
+const stories: StoryType[] = [
   {
     id: 1,
     desktop: "/stories/desktop/mountains.jpg",
@@ -8,6 +10,8 @@ const stories = [
     name: "Mountains",
     author: "John Appleseed",
     alt: "Mountains image",
+    featured: false,
+    intro: "",
   },
   {
     id: 2,
@@ -18,6 +22,8 @@ const stories = [
     name: "Sunset Cityscapes",
     author: "Benjamin Cruz",
     alt: "Sunset Cityscapes image",
+    featured: false,
+    intro: "",
   },
   {
     id: 3,
@@ -28,6 +34,8 @@ const stories = [
     name: "18 Days Voyage",
     author: "Alexei Borodin",
     alt: "Voyage image",
+    featured: false,
+    intro: "",
   },
   {
     id: 4,
@@ -38,6 +46,8 @@ const stories = [
     name: "Architecturals",
     author: "Samantha Broke",
     alt: "Architecturals image",
+    featured: false,
+    intro: "",
   },
   {
     id: 5,
@@ -48,6 +58,8 @@ const stories = [
     name: "World Tour 2019",
     author: "Timothy Wagner",
     alt: "Tour image",
+    featured: false,
+    intro: "",
   },
   {
     id: 6,
@@ -58,6 +70,8 @@ const stories = [
     name: "Unforseen Corners",
     author: "William Malcolm",
     alt: "Unforseen Corners image",
+    featured: false,
+    intro: "",
   },
   {
     id: 7,
@@ -68,6 +82,8 @@ const stories = [
     name: "King of Africa Part II",
     author: "Tim Hillenburg",
     alt: "Lion image",
+    featured: false,
+    intro: "",
   },
   {
     id: 8,
@@ -78,6 +94,8 @@ const stories = [
     name: "The Trip to Nowhere",
     author: "Felicia Rourke",
     alt: "Trip image",
+    featured: false,
+    intro: "",
   },
   {
     id: 9,
@@ -88,6 +106,8 @@ const stories = [
     name: "Rage of The sea",
     author: "Mohammed Abdul",
     alt: "Sea image",
+    featured: false,
+    intro: "",
   },
   {
     id: 10,
@@ -98,6 +118,8 @@ const stories = [
     name: "Running Free",
     author: "Michelle",
     alt: "Horses image",
+    featured: false,
+    intro: "",
   },
   {
     id: 11,
@@ -108,6 +130,8 @@ const stories = [
     name: "Behind the Waves",
     author: "Lamarr Wilson",
     alt: "Waves image",
+    featured: false,
+    intro: "",
   },
   {
     id: 12,
@@ -118,6 +142,8 @@ const stories = [
     name: "Calm Waters",
     author: "Samata Brooke",
     alt: "Waters image",
+    featured: false,
+    intro: "",
   },
   {
     id: 13,
@@ -128,6 +154,8 @@ const stories = [
     name: "The Milky Way",
     author: "Benjamin Cruz",
     alt: "Milky Way image",
+    featured: false,
+    intro: "",
   },
   {
     id: 14,
@@ -138,6 +166,8 @@ const stories = [
     name: "Night at The Dark Forest",
     author: "Mohammed Abdul",
     alt: "Dark Forset image",
+    featured: false,
+    intro: "",
   },
   {
     id: 15,
@@ -148,6 +178,8 @@ const stories = [
     name: "Somwarpet's Beauty",
     author: "Michele",
     alt: "Somwarpet image",
+    featured: false,
+    intro: "",
   },
   {
     id: 16,
@@ -158,6 +190,21 @@ const stories = [
     name: "Land of Dreams",
     author: "William Malcolm",
     alt: "Land image",
+    featured: false,
+    intro: "",
+  },
+  {
+    id: 17,
+    desktop: "/stories/desktop/moon-of-appalacia.jpg",
+    tablet: "/stories/desktop/moon-of-appalacia.jpg",
+    mobile: "/stories/mobile/moon-of-appalacia.jpg",
+    date: "March 2nd 2020",
+    name: "HAZY FULL MOON OF APPALACHIA",
+    author: "by John Appleseed",
+    alt: "Hazy Mountain image",
+    featured: true,
+    intro:
+      "The dissected plateau area, while not actually made up of geological mountains, is popularly called 'mountains,' especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.",
   },
 ]
 
