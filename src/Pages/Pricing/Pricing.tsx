@@ -4,6 +4,7 @@ import PricingTab from "/pricing/tablet/hero.jpg"
 import PricingMob from "/pricing/mobile/hero.jpg"
 import Beta from "../../Components/Beta/Beta"
 import CardPrices from "./CardPrices"
+import Table from "./Table"
 
 export default function Pricing() {
   return (
@@ -19,6 +20,7 @@ export default function Pricing() {
         subtitle="Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos."
       />
       <CardPrices />
+      <Table />
       <Beta />
     </div>
   )

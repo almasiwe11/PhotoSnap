@@ -105,6 +105,16 @@
     backface-visibility: hidden;
   }
 
+  td {
+    height: 60px;
+    border-bottom: 1px solid #dfdfdf;
+    text-align: center;
+  }
+
+  th {
+    text-align: center;
+  }
+
   .back {
     transform: rotateY(-180deg);
   }
