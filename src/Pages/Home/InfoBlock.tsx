@@ -22,7 +22,7 @@ export default function InfoBlock({
   right = false,
 }: PropTypes) {
   return (
-    <div className="flex-flex relaitve md:justify-between">
+    <div className="flex-flex relaitve md:justify-between lg:h-[calc(100vh-5rem)]">
       <RespImage
         desktop={des}
         mobile={mob}
@@ -35,7 +35,7 @@ export default function InfoBlock({
           right && "md:order-first "
         }`}
       >
-        <div className={`py-16 max-len flex flex-col gap-6  `}>
+        <div className={`py-16 max-len flex flex-col gap-6`}>
           <h1 className={heading.black}>{title}</h1>
           <p>{children}</p>
           <Cta />

@@ -7,9 +7,11 @@ type PropTypes = {
 }
 
 export default function Stories({ num = stories.length }: PropTypes) {
-  const displayStories = stories.slice(0, num)
+  const displayStories = stories
+    .slice(0, num)
+    .filter((story) => !story.featured)
   return (
-    <div className=" grid grid-cols-stories">
+    <div className=" grid grid-cols-stories 2xl:grid-cols-stories-2xl">
       {displayStories.map((story) => (
         <div
           key={story.id}

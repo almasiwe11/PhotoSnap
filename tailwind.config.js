@@ -13,7 +13,8 @@ export default {
         dm: "DM Sans, sans-serif",
       },
       gridTemplateColumns: {
-        stories: "repeat(auto-fit, minmax(20rem, 1fr))",
+        stories: "repeat(auto-fit, minmax(22rem, 1fr))",
+        "stories-2xl": "repeat(auto-fit, minmax(24rem, 1fr))",
         footer: "max-content, 1fr, max-content",
       },
       backgroundImage: {
