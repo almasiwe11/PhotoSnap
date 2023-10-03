@@ -50,4 +50,67 @@
   .gradient {
     @apply bg-gradient-to-bl from-blue via-pink  to-orange;
   }
+
+  .switcher {
+    background-color: #dfdfdf;
+    height: 1.3rem;
+    width: 2.6rem;
+    border-radius: 8rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .switcher__circle {
+    border-radius: 50%;
+    background-color: black;
+    aspect-ratio: 1/1;
+    margin-left: 2px;
+    height: 80%;
+    transition: 0.3s ease-in-out;
+  }
+
+  .dark {
+    background-color: white;
+    transform: translateX(125%);
+  }
+
+  .dark-bg {
+    background-color: black;
+  }
+
+  .card-container {
+    width: 23rem;
+    height: 32rem;
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+  }
+
+  .card-container.flip > .card {
+    transform: rotateY(180deg);
+  }
+
+  .card-container.backflip > .card {
+    transform: rotateY(-180deg);
+  }
+
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .back {
+    transform: rotateY(-180deg);
+  }
 }

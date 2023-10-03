@@ -2,6 +2,8 @@ import PhotoText from "../../Components/PhotoText/PhotoText"
 import FeatureDes from "/features/desktop/hero.jpg"
 import FeatureTab from "/features/tablet/hero.jpg"
 import FeatureMob from "/features/mobile/hero.jpg"
+import Features from "../../Components/Features/Features"
+import Beta from "../../Components/Beta/Beta"
 
 export default function FeaturesPage() {
   return (
@@ -17,6 +19,8 @@ export default function FeaturesPage() {
         color="black"
         vh={false}
       />
+      <Features />
+      <Beta />
     </>
   )
 }
