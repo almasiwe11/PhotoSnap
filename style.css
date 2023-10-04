@@ -51,6 +51,10 @@
     @apply bg-gradient-to-bl from-blue via-pink  to-orange;
   }
 
+  .gradient-story {
+    @apply bg-gradient-to-tr from-orange  via-pink/50  to-blue/0;
+  }
+
   .switcher {
     background-color: #dfdfdf;
     height: 1.3rem;
@@ -118,4 +122,54 @@
   .back {
     transform: rotateY(-180deg);
   }
+
+  .hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+
+  .open {
+    transform: rotate(90deg);
+  }
+
+  .open .hamburger-middle {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+  }
+
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  }
+}
+
+.pain {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 197, 147, 0.7) 0%,
+    rgba(188, 113, 152, 0.47) 22%,
+    rgba(90, 119, 255, 0.01) 40%,
+    rgba(90, 119, 255, 0.01) 100%
+  );
 }

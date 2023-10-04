@@ -1,4 +1,9 @@
-function Hamburger({ setIsOpen, isOpen }) {
+type Props = {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
+  isOpen: boolean
+}
+
+function Hamburger({ setIsOpen, isOpen }: Props) {
   return (
     <button
       id="menu-btn"
@@ -8,7 +13,6 @@ function Hamburger({ setIsOpen, isOpen }) {
       } `}
       onClick={() => setIsOpen((prev) => !prev)}
     >
-      <span className="hamburger-top"></span>
       <span className="hamburger-middle"></span>
       <span className="hamburger-bottom"></span>
     </button>

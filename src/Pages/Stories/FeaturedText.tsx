@@ -4,13 +4,14 @@ import { StoryType } from "../../Types/StoryTypes"
 
 type Props = {
   story: StoryType
+  setIsHovered: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function FeaturedText({ story }: Props) {
+export default function FeaturedText({ story, setIsHovered }: Props) {
   const { intro, date, author, name } = story
   return (
     <div className="bg-black md:absolute left-0 top-0 md:bg-transparent h-full w-full flex-center py-20 md:py-0 md:max-w-[42rem] 2xl:max-w-[50rem]">
-      <div className="w-full flex-center text-white">
+      <div className="w-full z-10 flex-center text-white">
         <div className=" flex flex-col gap-5 md:gap-6 lg:gap-7 max-w-md  2xl:max-w-lg ">
           <span className="tracking-wider uppercase font-bold">
             last month's features story
@@ -23,7 +24,14 @@ export default function FeaturedText({ story }: Props) {
             <span className="font-bold">{author} </span>
           </div>
           <p className="text-gray">{intro}</p>
-          <Cta color="white" text="read the story" />
+          <div
+            onMouseEnter={() => {
+              setIsHovered(true)
+            }}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <Cta color="white" text="read the story" duration={1000} />
+          </div>
         </div>
       </div>
     </div>

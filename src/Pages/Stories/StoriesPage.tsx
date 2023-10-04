@@ -9,5 +9,3 @@ export default function StoriesPage() {
     </>
   )
 }
-
-// lg:h-[calc(100vh-5rem)]

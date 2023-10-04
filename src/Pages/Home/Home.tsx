@@ -20,6 +20,7 @@ export default function Home() {
         subtitle="Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others."
         cta="get an invite"
       />
+
       <Info />
       <Stories num={4} />
       <div className="mb-24">

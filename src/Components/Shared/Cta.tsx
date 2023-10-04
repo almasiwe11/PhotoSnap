@@ -4,12 +4,14 @@ type PropTypes = {
   text?: string
   color?: "black" | "white"
   mt?: boolean
+  duration?: number
 }
 
 export default function Cta({
   text = "view the stories",
   color = "black",
   mt = true,
+  duration,
 }: PropTypes) {
   return (
     <div
@@ -18,7 +20,7 @@ export default function Cta({
       } cursor-pointer group`}
     >
       <span className="uppercase font-bold">{text}</span>
-      <Arrow color={color} />
+      <Arrow color={color} duration={duration} />
     </div>
   )
 }
