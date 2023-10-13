@@ -32,7 +32,7 @@ export default function PhotoText({
     <div
       className={`flex-flex ${
         vh && "lg:h-[calc(100vh-5rem)]"
-      } md:justify-between`}
+      } md:justify-between ${!vh && "lg:h-[30.5rem]"}`}
     >
       <HeroText
         title={title}
