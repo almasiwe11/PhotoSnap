@@ -1,21 +1,27 @@
+import { Suspense, lazy } from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import AppLayout from "./ui/AppLayout"
-import Home from "./Pages/Home/Home"
-import StoriesPage from "./Pages/Stories/StoriesPage"
-import FeaturesPage from "./Pages/Features/FeaturesPage"
-import Pricing from "./Pages/Pricing/Pricing"
+import Fallback from "./Components/Fallback"
+
+const AppLayout = lazy(() => import("./ui/AppLayout"))
+const Home = lazy(() => import("./Pages/Home/Home"))
+const StoriesPage = lazy(() => import("./Pages/Stories/StoriesPage"))
+const FeaturesPage = lazy(() => import("./Pages/Features/FeaturesPage"))
+const Pricing = lazy(() => import("./Pages/Pricing/Pricing"))
+
 function App() {
   return (
     <div className="font-dm">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<AppLayout />}>
-            <Route index element={<Home />} />
-            <Route path="stories" element={<StoriesPage />} />
-            <Route path="features" element={<FeaturesPage />} />
-            <Route path="pricing" element={<Pricing />} />
-          </Route>
-        </Routes>
+        <Suspense fallback={<Fallback />}>
+          <Routes>
+            <Route path="/" element={<AppLayout />}>
+              <Route index element={<Home />} />
+              <Route path="stories" element={<StoriesPage />} />
+              <Route path="features" element={<FeaturesPage />} />
+              <Route path="pricing" element={<Pricing />} />
+            </Route>
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </div>
   )
