@@ -24,6 +24,8 @@ function RespImage({
         src={mobile}
         alt={alt}
         className={`object-cover h-full ${style} w-full`}
+        width="100%"
+        height="auto"
         loading="lazy"
       />
     </picture>
