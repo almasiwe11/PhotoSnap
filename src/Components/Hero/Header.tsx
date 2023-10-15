@@ -24,9 +24,9 @@ export default function Header() {
       <header
         className={`${
           isOpen ? "locked" : ""
-        } relative bg-white z-50 flex items-center  h-20`}
+        } relative bg-white z-50 flex items-center  h-24`}
       >
-        <div className="flex justify-between wrapper">
+        <div className="flex justify-between wrapper items-center">
           <Logo />
           <NavMenu
             ulStyle=" gap-8 font-bold hidden md:flex"
